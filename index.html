@@ -16,6 +16,9 @@
         color: black;
 
     }
+    .carousel-item img{
+        height:300px
+      }
 
     .box-orange {
     background-color: #ff9800;
@@ -59,7 +62,18 @@
         margin-left: 120px;
       }
       .carousel-item img{
-        height:120px
+        height:160px
+      }
+      #sunlight{
+        position: sticky;
+        top: 2px;
+        z-index: 100;
+      }
+      #navbarr{
+         position: sticky;
+        top: 80px;
+        z-index: 100;
+
       }
     }
     .social-icons a {
@@ -75,7 +89,40 @@
             font-size: 12px;
 
     }
+     
+
 }
+@media (min-width: 1200px) {
+#sunlight{
+        position: sticky;
+        top: 2px;
+        z-index: 100;
+      }
+      #navbarr{
+         position: sticky;
+        top: 60px;
+        z-index: 100;
+
+      }
+
+}
+
+/* Specifically for 1366px width laptops */
+@media screen and (min-width: 1366px) and (max-width: 1440px) {
+ #sunlight{
+        position: sticky;
+        top: 2px;
+        z-index: 100;
+      }
+      #navbarr{
+         position: sticky;
+        top: 60px;
+        z-index: 100;
+      }
+      }
+
+
+ 
 .testimonial-item{
  background-color: #020305;
 box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
@@ -93,18 +140,22 @@ box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 .testimonial-item  p{
   color: rgb(169, 163, 163);
 }
+ 
+
+     
+
   </style>
 </head>
 <body>
-  <div class="container-fluid" style="background-color: rgb(249, 167, 43);">
+  <div class="container-fluid" style="background-color: rgb(248, 49, 49);">
     <div class="row text-center py-1" id="email-row">
       <div class="col-12 col-md-4">
-        <i class="bi bi-envelope"></i>
-        <b class="ml-2" style="font-family:serif;">sunlightcomputercenter6@gmail.com</b>
+        <i class="bi bi-envelope text-white"></i>
+        <b class="ml-2" style="font-family:serif;color: white;">sunlightcomputercenter6@gmail.com</b>
       </div>
       <div class="col-12 col-md-4 ">
-        <i class="bi bi-telephone-fill"></i>
-        <b class="ml-2"style="font-family:serif;">+91 7460843822</b>
+        <i class="bi bi-telephone-fill text-white"></i>
+        <b class="ml-2"style="font-family:serif;color: white;">+91 7460843822</b>
       </div>
       <div class="col-12 col-md-4 social-icons  ">
         <a href="#"><i class="bi bi-whatsapp what" style="color: rgb(35, 140, 35);font-size: 20px;"></i></a>
@@ -116,13 +167,13 @@ box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
     </div>
   </div>
 
-  <div class="container-fluid" style="box-shadow: 3px 4px 5px black;">
+  <div class="container-fluid" style="box-shadow: 3px 4px 5px black;  background-color: white;" id="sunlight">
     <div class="row"><div class="col-12 text-center"><b style="color: rgb(246, 18, 18);font-family:Georgia, 'Times New Roman', Times, serif;"> SUNLIGHT WALLAH COMPUTER EDUCATION & TECHNOLOGY</b>
     <P> 98 Malviya Nagar Sikandra Kanpur Dehat</P></div></div>
   </div>
 
   <!-- navbar start -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light mt-2" style="background: linear-gradient(rgb(177, 174, 174),rgb(152, 152, 153),rgb(160, 158, 158));" >
+  <nav class="navbar navbar-expand-lg navbar-light bg-light mt-2" style="background: linear-gradient(rgb(222, 86, 86),rgb(241, 64, 94),rgb(241, 88, 88));  "  id="navbarr">
     <a class="navbar-brand" href="#"><img src="logo sunlight.jpg" height="70px" style="border-radius: 50%;  "></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -201,7 +252,7 @@ box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
   <!-- slider end -->
 
   <!-- news & event  section -->
-<div class="container mt-3">
+<div class="container mt-2 mb-2">
   <div class="row">
     <!-- Slide 1 -->
     <div class="col-md-4">
@@ -212,11 +263,13 @@ box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
           </h1>
           <marquee direction="up" scrollamount="2" behavior="scroll" height="200px"onmouseover="this.stop();" onmouseout="this.start();"  >
             <div style="text-align: center;">
-              <img src="logo sunlight.jpg" height="150px">
+              <img src="placed1.jpg" height="150px" width="200px">
               <h3>Er. Ritik Katiyar</h3> <hr>
-              <img src="logo sunlight.jpg" height="150px">
+              <img src="placed2.jpg" height="150px" width="200px">
               <h3>Er. Ritik Katiyar</h3> <hr>
-              <img src="logo sunlight.jpg" height="150px">
+               <img src="placed4.jpg" height="150px" width="200px">
+              <h3>Er. Ritik Katiyar</h3> <hr>
+              <img src="placed3.jpg" height="150px" width="200px">
               <h3>Er. Ritik Katiyar</h3> <hr>
             </div>
           </marquee>
@@ -225,7 +278,7 @@ box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
     </div>
 
     <!-- Slide 2 -->
-    <div class="col-md-4">
+    <div class="col-md-4 mt-3 mb-2">
       <div class="card">
         <div class="card-title">
           <h1 style="background: blue; color: white; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 20px; text-align: center;">
@@ -246,13 +299,13 @@ box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
     </div>
 
     <!-- Slide 3 -->
-    <div class="col-md-4">
+    <div class="col-md-4 mt-3 mb-3">
       <div class="card">
         <div class="card-title">
           <h1 style="background: blue; color: white; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 20px; text-align: center;">
      News & Events
           </h1>
-          <marquee direction="up" scrollamount="2" behavior="scroll" height="200px" >
+          <marquee direction="up" scrollamount="2" behavior="scroll" height="200px" onmouseover="this.stop();" onmouseout="this.start();">
             <div style="text-align: center;">
               <a href="" style="color: red; text-decoration: none;"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam, dicta?</p></a> <hr>
                <a href="" style="color: rgb(12, 9, 238); text-decoration: none;"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam, dicta?</p></a> <hr>
@@ -427,6 +480,67 @@ box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
   </a>
 </div>
 
+<!-- web developer slider -->
+ <!-- Bootstrap CSS -->
+<!-- Header -->
+<div class="text-center py-3" style="color: rgb(232, 171, 4); background-color: #0f0f10; font-size: 30px;">
+  <i class="fas fa-quote-left "></i>
+  <b>Web Developer</b>
+  <i class="fas fa-quote-right "></i>
+</div>
+
+<!-- Carousel Start -->
+<div id="webDevCarousel" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+
+    <!-- Slide 1 -->
+    <div class="carousel-item active">
+      <div class="d-flex align-items-center justify-content-center flex-column px-3 py-4" style="background-color: #100f10; min-height: 100px;">
+        <div class="card text-white bg-dark shadow-lg p-4 rounded" style="width: 100%; max-width: 450px;">
+          <div class="text-center">
+            <img src="ritik1img-removebg-preview-removebg-preview.jpg"
+              class="rounded-circle mb-3 border border-light img-fluid"
+              style="width: 120px; height: 120px;  " alt="Developer">
+            <h3 style="color: #c40000; font-family: cursive; font-weight: bold;">Er. Ritik Katiyar</h3>
+            <h6 class="mb-2">Full Stack Web Developer</h6>
+            <p style="color: #03a9f4; font-weight: bold;" class="mb-0">
+              Java | JSP | Servlet | MySQL | HTML | CSS | JavaScript
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="carousel-item">
+      <div class="d-flex align-items-center justify-content-center flex-column px-3 py-4" style="background-color: #0f0f10; min-height: 100px;">
+        <div class="card text-white bg-dark shadow-lg p-4 rounded" style="width: 100%; max-width: 450px;">
+          <div class="text-center">
+            <img src="WhatsApp Image 2025-08-03 at 23.18.37_d633a0ce.jpg"
+              class="rounded-circle mb-3 border border-light img-fluid"
+              style="width: 120px; height: 120px; " alt="Developer">
+            <h3 style="color: #f39c12; font-family: cursive; font-weight: bold;">Er. Pranshu Savita</h3>
+            <h6 class="mb-2">Full Stack Web Developer</h6>
+            <p style="color: #00bcd4; font-weight: bold;" class="mb-0">
+              Java | JSP | Servlet | MySQL | HTML | CSS | JavaScript
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Controls -->
+  <a class="carousel-control-prev" href="#webDevCarousel" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#webDevCarousel" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
 
 
 
@@ -434,7 +548,7 @@ box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 
    
     <!-- Footer Start -->
-<footer class="bg-dark text-light pt-4">
+<footer class=" text-light pt-4" style="background-color: #c40000;">
     <div class="container">
       <div class="row text-center">
   
@@ -475,7 +589,7 @@ box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
     </div>
     <div class="bg-secondary text-center py-2">
        <small>© 2025 Sunlight Wallah Computer Education & Technology. All rights reserved.</small><br>
-  <small>Designed & Developed by <strong style="font-family: cursive; color: blue;">Er. Ritik Katiyar</strong></small>
+  <small>Designed & Developed by <strong style="font-family: cursive; color: blue; font-weight: bold;">Er. Ritik Katiyar</strong></small>
     </div>
   </footer>
   <!-- Footer End -->
