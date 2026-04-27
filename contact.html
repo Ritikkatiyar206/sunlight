@@ -1,0 +1,687 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Responsive Header</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <style>
+    body {
+  font-family: 'Poppins', sans-serif;
+}
+/* WhatsApp Button */
+.whatsapp-btn{
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#25D366;
+  color:white;
+  font-size:28px;
+  padding:12px 15px;
+  border-radius:50%;
+  box-shadow:0 4px 10px rgba(0,0,0,0.3);
+  z-index:999;
+}
+.whatsapp-btn:hover{
+  background:#1ebe5d;
+  color:white;
+}
+
+    #home{
+
+        margin-left: 150px;
+        color: black;
+
+    }
+    .carousel-item img{
+        height:300px
+      }
+
+    .box-orange {
+    background-color: #ff9800;
+    font-weight: bold;
+    border-radius: 5px;
+ 
+  }
+  .box-blue {
+    background-color: #2196f3;
+    font-weight: bold;
+    border-radius: 5px;
+     
+  }
+
+  /* Hover effect (optional) */
+  .box-orange:hover, .box-blue:hover {
+    opacity: 0.8;
+    cursor: pointer;
+  }
+    #about{
+       margin-left: 40px;
+       color: black;
+      }
+    #email-row b, #email-row i {
+      font-size: 16px;
+    }
+    @media (max-width: 768px) {
+      #email-row b, #email-row i {
+        font-size: 12px;
+      }
+      #email-row div {
+        margin-bottom: 5px;
+      }
+      .what{
+        margin-left: 8px;
+      }
+      #home{
+        margin-left: 120px;
+      }
+      #about{
+        margin-left: 120px;
+      }
+      .carousel-item img{
+        height:160px
+      }
+      #sunlight{
+        position: sticky;
+        top: 2px;
+        z-index: 100;
+      }
+      #navbarr{
+         position: sticky;
+        top: 80px;
+        z-index: 100;
+
+      }
+    }
+    .social-icons a {
+      color: black;
+      margin-right: 8px;
+      
+      font-size: 10px;
+      
+    }
+
+    @media (max-width: 1030px) {
+        #email-row b, #email-row i {
+            font-size: 12px;
+
+    }
+     
+
+}
+@media (min-width: 1200px) {
+#sunlight{
+        position: sticky;
+        top: 2px;
+        z-index: 100;
+      }
+      #navbarr{
+         position: sticky;
+        top: 60px;
+        z-index: 100;
+
+      }
+
+}
+
+/* Specifically for 1366px width laptops */
+@media screen and (min-width: 1366px) and (max-width: 1440px) {
+ #sunlight{
+        position: sticky;
+        top: 2px;
+        z-index: 100;
+      }
+      #navbarr{
+         position: sticky;
+        top: 60px;
+        z-index: 100;
+      }
+      }
+
+
+ 
+.testimonial-item{
+ background-color: #020305;
+box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+.testimonial-item img{
+  border-radius: 50%;
+}
+.testimonial-item img, h5{
+  color: White;
+}
+.testimonial-item small{
+  color: blue;
+  font-size: 20px;
+}
+.testimonial-item  p{
+  color: rgb(169, 163, 163);
+}
+/* about us */
+/* About Section */
+.about-section{
+  background:#f8f9fa;
+}
+
+.section-title{
+  color:#c40000;
+  font-weight:700;
+}
+
+.section-subtitle{
+  color:#666;
+  font-size:15px;
+}
+
+.about-image-box{
+  overflow:hidden;
+  border-radius:15px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+
+.about-image-box img{
+  width:100%;
+  transition:0.4s;
+}
+
+.about-image-box:hover img{
+  transform:scale(1.05);
+}
+
+.about-content-box{
+  background:#fff;
+  padding:30px;
+  border-radius:15px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.08);
+}
+
+.about-content-box p{
+  color:#444;
+  line-height:1.8;
+  text-align:justify;
+}
+
+.feature-box{
+  background:#fff;
+  border-left:4px solid #c40000;
+  padding:12px;
+  border-radius:8px;
+  font-weight:500;
+  transition:0.3s;
+  box-shadow:0 4px 10px rgba(0,0,0,0.05);
+}
+
+.feature-box i{
+  color:#c40000;
+  margin-right:8px;
+}
+
+.feature-box:hover{
+  background:#c40000;
+  color:#fff;
+  transform:translateY(-5px);
+}
+
+.feature-box:hover i{
+  color:#fff;
+}
+ 
+/* Section */
+/* Header Section */
+.course-header{
+  height:250px;
+  background:linear-gradient(rgba(239, 68, 68, 0.6), rgba(103, 18, 18, 0.7)),
+             url("ourcourse.jfif"); /* apni image lagao */
+  background-size:cover;
+  background-position:center;
+  border-radius:10px;
+  margin-bottom:40px;
+}
+
+/* Text */
+.course-header h2{
+  color:#fff;
+  font-weight:700;
+  font-size:40px;
+  letter-spacing:1px;
+}
+
+.course-header p{
+  color:#f6da09;
+  font-size:16px;
+}
+
+/* Mobile */
+@media(max-width:768px){
+  .course-header{
+    height:180px;
+  }
+  .course-header h2{
+    font-size:24px;
+  }
+}
+.course-section{
+  background:#f8f9fa;
+}
+
+/* Heading */
+.course-title{
+  color:#c40000;
+  font-weight:700;
+}
+
+/* Card */
+.course-box{
+  position:relative;
+  overflow:hidden;
+  border-radius:15px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.1);
+  transition:0.4s;
+  background:#fff;
+}
+
+/* Image */
+.course-box img{
+  width:100%;
+  height:220px;
+  object-fit:cover;
+  transition:0.4s;
+}
+
+/* Overlay */
+.course-overlay{
+  position:absolute;
+  bottom:0;
+  width:100%;
+  background:linear-gradient(to top, rgba(196,0,0,0.9), rgba(0,0,0,0));
+  color:#fcf8f8;
+  padding:15px;
+  transition:0.4s;
+}
+
+/* Content */
+.course-overlay h5{
+  font-weight:700;
+  color: white;
+}
+
+.course-overlay p{
+  font-size:15px;
+}
+
+/* Button */
+.course-overlay .btn{
+  background:#fff;
+  color:#c40000;
+  font-weight:600;
+  border-radius:20px;
+  font-size:12px;
+}
+
+/* Hover Effect */
+.course-box:hover{
+  transform:translateY(-10px);
+}
+
+.course-box:hover img{
+  transform:scale(1.1);
+}
+
+.course-box:hover .course-overlay{
+  background:rgba(196,0,0,0.95);
+}
+/* CONTACT SECTION */
+.contact-section{
+  background:linear-gradient(120deg,#fff,#ffe5e5);
+}
+
+.contact-title{
+  color:#c40000;
+  font-weight:700;
+}
+
+.contact-subtitle{
+  color:#666;
+}
+
+/* LEFT BOX */
+.contact-info{
+  background:rgba(255,255,255,0.9);
+  padding:30px;
+  border-radius:15px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.1);
+}
+
+.contact-info h4{
+  color:#c40000;
+  font-weight:700;
+}
+
+.info-box{
+  display:flex;
+  align-items:center;
+  margin-bottom:15px;
+  font-size:15px;
+}
+
+.info-box i{
+  width:40px;
+  height:40px;
+  background:#c40000;
+  color:#fff;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  margin-right:10px;
+}
+
+/* SOCIAL */
+.social a{
+  display:inline-block;
+  width:35px;
+  height:35px;
+  line-height:35px;
+  text-align:center;
+  background:#c40000;
+  color:#fff;
+  border-radius:50%;
+  margin-right:8px;
+  transition:0.3s;
+}
+
+.social a:hover{
+  background:#000;
+}
+
+/* FORM */
+.contact-form{
+  background:#fff;
+  padding:30px;
+  border-radius:15px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.1);
+}
+
+.contact-form input,
+.contact-form textarea{
+  width:100%;
+  padding:10px 15px;
+  border-radius:30px;
+  border:1px solid #ccc;
+  outline:none;
+  transition:0.3s;
+}
+
+.contact-form textarea{
+  border-radius:15px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+  border-color:#c40000;
+  box-shadow:0 0 5px rgba(196,0,0,0.3);
+}
+
+.contact-form button{
+  width:100%;
+  padding:10px;
+  border:none;
+  border-radius:30px;
+  background:#c40000;
+  color:#fff;
+  font-weight:600;
+  transition:0.3s;
+}
+
+.contact-form button:hover{
+  background:#000;
+}
+ .map-box{
+  box-shadow:0 10px 25px rgba(0,0,0,0.1);
+  border-radius:15px;
+  overflow:hidden;
+  transition:0.3s;
+}
+
+.map-box:hover{
+  transform:scale(1.01);
+}    
+
+  </style>
+</head>
+<body>
+  <div class="container-fluid" style="background-color: rgb(248, 49, 49);">
+    <div class="row text-center py-1" id="email-row">
+      <div class="col-12 col-md-4">
+        <i class="bi bi-envelope text-white"></i>
+        <b class="ml-2" style="font-family:serif;color: white;">sunlightcomputercenter6@gmail.com</b>
+      </div>
+      <div class="col-12 col-md-4 ">
+        <i class="bi bi-telephone-fill text-white"></i>
+        <b class="ml-2"style="font-family:serif;color: white;">+91 7460843822</b>
+      </div>
+      <div class="col-12 col-md-4 social-icons  ">
+        <a href="#"><i class="bi bi-whatsapp what" style="color: rgb(35, 140, 35);font-size: 20px;"></i></a>
+     <a href="#"><i class="bi bi-facebook" style="color: blue;font-size: 20px;"></i></a>
+     <a href="#"><i class="bi bi-instagram" style="background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af, #515bd4);color: transparent;-webkit-background-clip: text; font-size: 20px;"></i></a>
+        <a href="#"><i class="bi bi-linkedin" style="color: blue;font-size: 20px;"></i></a>
+     
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid" style="box-shadow: 3px 4px 5px black;  background-color: white;" id="sunlight">
+    <div class="row"><div class="col-12 text-center"><b style="color: rgb(246, 18, 18);font-family:Georgia, 'Times New Roman', Times, serif;"> SUNLIGHT WALLAH COMPUTER EDUCATION & TECHNOLOGY</b>
+    <P> 98 Malviya Nagar Sikandra Kanpur Dehat</P></div></div>
+  </div>
+
+  <!-- navbar start -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light mt-2" style="background: linear-gradient(rgb(222, 86, 86),rgb(241, 64, 94),rgb(241, 88, 88));  "  id="navbarr">
+    <a class="navbar-brand" href="#"><img src="logo sunlight.jpg" height="70px" style="border-radius: 50%;  "></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item ">
+          <a class="nav-link" href="index.html"  id="home"><b>Home</b> <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html" id="about"><b>About Us</b></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="cource.html"id="about"><b>Course</b></a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link " href="notes.html"id="about"><b>Notes</b></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="gallery.html"id="about"><b>Gallery</b></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html"id="about"><b>Contact us</b></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="login.html"id="about"><b>Login</b></a>
+          </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- navbar end -->
+<!-- CONTACT US START -->
+<section class="contact-section py-5">
+  <div class="container">
+
+    <!-- Heading -->
+    <div class="text-center mb-5">
+      <h2 class="contact-title">Contact Us</h2>
+      <p class="contact-subtitle">We’d love to hear from you</p>
+    </div>
+
+    <div class="row align-items-center">
+
+      <!-- LEFT INFO -->
+      <div class="col-md-5 mb-4">
+        <div class="contact-info">
+
+          <h4>Get In Touch</h4>
+          <p class="mb-4">Feel free to contact us anytime for courses, admissions or queries.</p>
+
+          <div class="info-box">
+            <i class="fa fa-map-marker-alt"></i>
+            <span>98 Malviya Nagar, Sikandra, Kanpur Dehat</span>
+          </div>
+
+          <div class="info-box">
+            <i class="fa fa-phone"></i>
+            <span>+91 7460843822</span>
+          </div>
+
+          <div class="info-box">
+            <i class="fa fa-envelope"></i>
+            <span>sunlightcomputercenter6@gmail.com</span>
+          </div>
+
+          <div class="social mt-4">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- RIGHT FORM -->
+      <div class="col-md-7">
+        <div class="contact-form">
+
+          <form>
+
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <input type="text" placeholder="Full Name" required>
+              </div>
+
+              <div class="col-md-6 mb-3">
+                <input type="email" placeholder="Email Address" required>
+              </div>
+            </div>
+
+            <input type="text" class="mb-3" placeholder="Subject" required>
+
+            <textarea rows="4" placeholder="Your Message" required></textarea>
+
+            <button type="submit">Send Message</button>
+
+          </form>
+
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+<!-- CONTACT US END -->
+ <!-- GOOGLE MAP START -->
+<div class="container mb-5">
+  <div class="map-box">
+    <iframe 
+      src="https://www.google.com/maps?q=Malviya%20Nagar%20Sikandra%20Kanpur%20Dehat&output=embed"
+      width="100%" 
+      height="350" 
+      style="border:0; border-radius:15px;" 
+      allowfullscreen="" 
+      loading="lazy">
+    </iframe>
+  </div>
+</div>
+<!-- GOOGLE MAP END -->
+
+      
+
+   
+ 
+    <!-- Footer Start -->
+     <a href="https://wa.me/917460843822" target="_blank" class="whatsapp-btn">
+  <i class="fab fa-whatsapp"></i>
+</a>
+<footer class=" text-light pt-4" style="background-color: #c40000;">
+    <div class="container">
+      <div class="row text-center">
+  
+        <!-- About Section -->
+        <div class="col-md-4 mb-3">
+          <h5 class="text-warning">About Us</h5>
+          <p style="text-align: justify;">
+            Sunlight Wallah Computer Education & Technology provides quality computer education with practical exposure, located at 98 Malviya Nagar, Sikandra, Kanpur Dehat.
+          </p>
+        </div>
+  
+        <!-- Quick Links -->
+        <div class="col-md-4 mb-3">
+          <h5 class="text-warning">Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-light">Home</a></li>
+            <li><a href="#" class="text-light">Courses</a></li>
+            <li><a href="#" class="text-light">Downloads</a></li>
+            <li><a href="#" class="text-light">Notes</a></li>
+            <li><a href="#" class="text-light">Contact Us</a></li>
+          </ul>
+        </div>
+  
+        <!-- Contact & Social -->
+        <div class="col-md-4 mb-3">
+          <h5 class="text-warning">Contact Us</h5>
+          <p><i class="bi bi-envelope-fill"></i> sunlightcomputercenter6@gmail.com</p>
+          <p><i class="bi bi-telephone-fill"></i> +91 7460843822</p>
+          <div>
+            <a href="#" class="text-light mr-2"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="text-light mr-2"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="text-light mr-2"><i class="bi bi-whatsapp"></i></a>
+            <a href="#" class="text-light mr-2"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+    <div class="bg-secondary text-center py-2">
+       <small>© 2025 Sunlight Wallah Computer Education & Technology. All rights reserved.</small><br>
+  <small>Designed & Developed by <strong style="font-family: cursive; color: blue; font-weight: bold;">Er. Ritik Katiyar</strong></small>
+    </div>
+  </footer>
+  <!-- Footer End -->
+  
+  <script>
+    $(document).ready(function(){
+      $('.testimonial-slider').slick({
+        dots: true,
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        arrows: false,
+        fade: true,
+        cssEase: 'linear'
+      });
+    });
+  </script>
+  
+  </script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"></script>
+  <script>
+  $(document).ready(function () {
+    $('.navbar-nav .nav-link').click(function(){
+      $('.navbar-collapse').collapse('hide');
+    });
+  });
+</script>
+
+</body>
+</html>
